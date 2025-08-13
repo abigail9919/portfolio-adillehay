@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" ></script>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="stars.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="stars.js" defer></script>
+    <title>Abigail Dillehay</title>
+</head>
+<body>
+    <!-- this div is solely responsible for the background stars -->
+    <div class="stars bg-white"></div>
+
+    <nav class="navbar navbar-expand-md navbar-white bg-black">
+        <div class="container">
+  
+          <a class="navbar-brand" href="#">
+            <span
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Click me for a secret message!"
+                id="liveToastBtn">
+                <img src="images/spaceman.png" style="width: 70px; height: 70px;"/>
+            </span>
+          </a>
+  
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav mx-5">
+            <li class="nav-item">
+            <a class="nav-link active text-white" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link text-white" href="work.html">Work</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+            </li>
+            </ul>
+
+            <container class="col-md-5" ></container>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search here!"/>
+              <span
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Click to search!">
+              <button type="button" class="btn btn-primary btn-dark btn-outline-light" data-bs-toggle="modal" data-bs-target="#reflectionsModal">
+                Search
+              </button>
+            </span>
+            </form>
+          </div>
+        </div>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast text-dark" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header bg-info">
+            <strong class="me-auto">Spaceman Sam</strong>
+            <small>Just Now</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Hello!"></button>
+            </div>
+            <div class="toast-body">
+            Hello, user! :)
+            </div>
+        </div>
+        </div>
+
+          <div class="modal fade"
+        id="reflectionsModal"
+        tabindex="-1"
+        aria-labelledby="reflectionsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="reflectionsModalLabel">
+                        Actually...
+                    </h5>
+                    <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-dark">
+                        You aren't allowed to search anything.
+                    </p>
+                    <p class="text-dark">
+                        Maybe try again in the future?
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+                        Escape!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+  
+      </nav>
+      
+      <div class="row" style="margin-top: 5%;">
+      <div class="col-sm-12 col-lg-5 bg-body carousel-area" style="margin-left: 10%; margin-top: 5%;">
+        <div
+            id="course_carousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="6000">
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-bs-target="#course-carousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    title="button">
+                </button>
+                <button
+                    type="button"
+                    data-bs-target="#course-carousel"
+                    data-bs-slide-to="1"
+                    title="button">
+                </button>
+                <button
+                    type="button"
+                    data-bs-target="#course-carousel"
+                    data-bs-slide-to="2"
+                    title="button">
+                </button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        class="d-block w-100"
+                        src="images/figurative.jpg"
+                        alt="Ms. Neely Figurative Language Page"
+                    />
+                    <div class="carousel-caption">
+                        <h2>Figurative Language</h2>
+                        <p>A Group Project</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        class="d-block w-100"
+                        src="images/paws.jpg"
+                        alt="Paws Pantry Website"
+                    />
+                    <div class="carousel-caption">
+                        <h2>Paws Pantry</h2>
+                        <p>A Large On-Going Project</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        class="d-block w-100"
+                        src="images/crud.jpg"
+                        alt="CRUD application"
+                    />
+                    <div class="carousel-caption">
+                        <h2>C.R.U.D.</h2>
+                        <p>My JavaScript Midterm</p>
+                    </div>
+                </div>
+                
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#course_carousel"
+                data-bs-slide="prev">
+                <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true">
+                </span>
+                <span
+                    class="visually-hidden">
+                    Previous
+                </span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#course_carousel"
+                data-bs-slide="next">
+                <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true">
+                </span>
+                <span
+                    class="visually-hidden">
+                    Next
+                </span>
+            </button>
+        </div>
+      </div>
+            
+      <!-- accordian -->
+      <div class="col col-sm-12 col-lg-4  accordion-area">
+        <div class="accordion" id="accordianProjects" style="margin-top: 25%;">
+          <!-- FIGURATIVE LANGUAGE -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button
+                        class="accordion-button bg-dark text-light"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne">
+                        Figurative Language
+                    </button>
+                </h2>
+                <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="Figurative Language"
+                    data-bs-parent="#accordianProjects">
+                    <div class="accordion-body text-dark">
+                        <p class="text-dark">This Figurative Language page is one part of a larger project that my team and I created. To view the rest of this site, please visit the link:</p>
+                        <a href="https://abigail9919.github.io/CIT-31200-CLIENT-GROUP_PROJECT/" target="_blank">Figurative-Language-Group-Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAWS PANTRY -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                  <button
+                      class="accordion-button bg-dark text-light"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="true"
+                      aria-controls="collapseTwo">
+                      Paws Pantry Project
+                  </button>
+              </h2>
+              <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="Paws Pantry Project"
+                  data-bs-parent="#accordianProjects">
+                  <div class="accordion-body text-dark">
+                    <p class="text-dark">The Paws Pantry Project is a semester-long project that the Applied Computing Club is working on. We are all having a great time working and learning together. 
+                        As this project is still on-going, the QR code does not link to a developed site. Instead, it will show you the wireframes our team created for the front-end portion of this project. </p>
+                        <img src="images/paws-design.png" alt="Paws QR Code">
+                  </div>
+              </div>
+          </div>
+
+          <!-- CRUD -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button
+                    class="accordion-button bg-dark text-light"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="true"
+                    aria-controls="collapseThree">
+                    C.R.U.D. Midterm Project
+                </button>
+            </h2>
+            <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="C.R.U.D. Midterm Project"
+                data-bs-parent="#accordianProjects">
+                <div class="accordion-body text-dark">
+                    <p class="text-dark">For my JavaScript midterm, I was tasked with creating a CRUD application. That is, an application that can Create, Read, Update, or Delete objects from a class. 
+                        The following QR code will lead you to this project for viewing, but be warned: it does not look the best on mobile.</p>
+                        <img src="images/crud.png" alt="CRUD QR Code">
+                </div>
+            </div>
+        </div>
+                </div>
+                </div>
+                <!-- end accordian -->
+              </div>
+              
+                
+
+</body>
+</html>
