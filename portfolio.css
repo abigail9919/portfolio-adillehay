@@ -2,6 +2,10 @@
     color: #fff;
 }
 
+a {
+    color: #EE14FE;
+}
+
 .typewriter-text {
     display: inline-block;
     width: fit-content;
